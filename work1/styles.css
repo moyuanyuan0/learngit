@@ -1,60 +1,62 @@
 body, html {  
   margin: 0;  
   padding: 0;  
-  font-family: Arial, sans-serif;  
+  font-family: Arial, sans-serif;
+  
 }  
 
 .resume-container {  
-  width: 80%;  
+  width: 64%;  
   margin: 0 auto;  
-  border: 2px solid #000;  
+  border: 1px solid #8c8c8c;  
   padding: 20px;  
   box-sizing: border-box;  
-  display: flex; /* 使用Flexbox布局 */  
-  flex-direction: column; /* 垂直方向排列子元素 */  
+  display: flex;  
+  flex-direction: column;  
+  color: #484646;
+   
 }  
  
 
 .header p {  
-  margin: 0; /* 移除段落间的默认间距 */  
-  line-height: 1.5; /* 设置行高以改善可读性 */  
+  margin: 0; 
+  line-height: 1.5;  
 }  
  
  
 .header {  
   display: flex;  
-  justify-content: center; /* 文本内容居中 */  
-  align-items: flex-start; /* 垂直方向从顶部开始对齐 */  
-  flex-wrap: wrap; /* 允许子元素换行 */  
+  justify-content: center;  
+  align-items: flex-start;    
+    
   margin-bottom: 20px;  
 }  
 
 .text-content {  
-  display: inline-block; /* 使文本内容成为一个内联块级元素 */  
-  text-align: center; /* 文本内容居中 */  
-  width: calc(100% - 120px); /* 留出空间给图片，这里假设图片宽度加一些间距是120px */  
-  /* 如果图片宽度不固定，可以考虑使用媒体查询或JavaScript来动态调整这个宽度 */  
+  display: inline-block;  
+  text-align: center; 
+  width: calc(100% - 120px);    
+   
 }  
 
 .photo-container {  
-  display: inline-block; /* 使图片容器成为一个内联块级元素 */  
-  vertical-align: top; /* 顶部对齐，与文本内容顶部对齐 */  
-  margin-left: 20px; /* 与文本内容之间的间距 */  
+  display: inline-block;   
+  vertical-align: top;    
+  margin-left: 20px;   
 }  
 
 .photo {  
-  width: 100px; /* 图片宽度 */  
-  height: auto; /* 保持图片原始宽高比 */  
-  /* 可以根据需要添加其他样式，如边框、圆角等 */  
+  width: 150px;  
+  height: auto;  
+   
 }  
-
-/* 其他样式保持不变 */
+ 
 .section-title {  
   font-size: 20px;  
   font-weight: bold;  
   margin-bottom: 5px;  
-  text-align: left; /* 确保标题左对齐 */  
-  color:#205171;
+  text-align: left;  
+  color:#266187;
   -webkit-text-stroke: 0.3px rgb(33, 193, 185);
 }  
 
@@ -65,36 +67,28 @@ body, html {
   margin-bottom: 20px;  
 }  
 
-/* 如果需要，可以添加更多样式来确保后续内容也左对齐 */  
-.resume-container > * {  
-  text-align: left; /* 确保resume-container内的所有直接子元素都左对齐 */  
-}  
-
-/* 但请注意，header内的p元素已经通过Flexbox布局来定位，所以不需要这里的text-align: left; */
-.education p {  
-  margin: 0; /* 移除默认的段落间距 */  
-}  
-
-.school, .dates {  
-  display: inline-block; /* 使它们成为内联块级元素，以便可以在一行中并排显示 */  
-  vertical-align: middle; /* 垂直居中对齐 */  
-}  
-
-.school {  
-  /* 如果需要，可以添加一些左边距或样式 */  
-}  
  
+.resume-container > * {  
+  text-align: left;    
+}  
 
-/* 加粗样式已经通过HTML的<strong>标签实现 */
-.education p:first-child { /* 只针对第一个段落（即包含学校和日期的段落）应用Flexbox */  
+ 
+.education p {  
+  margin: 0;   
+}  
+
+  
+.education p:first-child {   
   display: flex;  
-  align-items: center; /* 垂直居中对齐 */  
-  margin: 0; /* 移除默认的段落间距 */  
+  align-items: center;   
+  margin: 0;  
 }  
 
 .dates {  
-  margin-left: auto; /* 将.dates推向右边 */  
-  /* 如果需要，可以添加一些右边距或字体样式 */  
+  margin-left: auto;  
+    
 }  
-
-/* 加粗样式仍然通过HTML的<strong>标签实现 */
+.separator {  
+  margin: 0 10px;  
+  color: #a7a4a4;   
+}
